@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> John's University</title>
+<style>
+body {
+  background-color: darkgrey;
+  background-image: url("22.jpg");
+  color: bisque;
+}
+h1 {
+    text-align: center;
+
+}
+a {
+  color: bisque;
+}
+li {
+  font-family: Courier;
+}
+.img {
+  float: left;
+  margin-right:10%;
+  margin-left: 2%;
+}
+.topnav {
+  overflow: hidden;
+  
+}
+.topnav input[type=text] {
+  background-color: bisque;
+  float: right;
+  padding: 6px;
+  margin-top: 0%;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+.header {
+  background-color:bisque;
+  column-count: 2;
+  padding: 10px;
+  margin-top: 15%;
+}
+.slideshow-container {
+  max-width: 350px;
+  position: left;
+  margin: auto;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 150px;
+  margin-right: 20px;
+  color: rgb(39, 39, 39);
+  font-family: Comic Sans MS;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 1px;
+  text-align:center;
+  color: rgb(39, 39, 39);
+}
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+    <h1 style="font-family: Lucida handwriting;">John's University</h1>
+    <div class="img">
+    <img src="ju.gif" height="200px" width="200px">
+    </div>
+    <div class="topnav">
+        <input type="text" placeholder="Search..">
+    <p><b><a href="#Home">Home / 
+    <a href="#Alumni" >Alumni /
+    <a href="#About" >About /
+    <a href="#News" >News /
+    <a href="#Contact" >Contact </a></b></p>
+    </div>
+    <div class="header" >
+      <a id="Home"></a>
+        <h3 style="color: black;text-align: center; font-family:Lucida handwriting;">Welcome to JU College</h3>
+        <p style="color: black;text-align: center;font-family: papyrus;">John University is committed to excellence in teaching, learning, and science, as well as the development of world leaders. Johns University graduates have made important and innovative contributions to culture, the arts and sciences, industry, and national and foreign relations for more than three and a half decades.
+          The liberal arts and sciences are the focus of the four-year, full-time undergraduate program. Undergraduates usually take four classes each semester in order to graduate in the traditional four years. Honors degrees in most fields include specialized coursework and a senior thesis. Despite the fact that certain beginner classes have broad class sizes, the average class size is 12 students.</p>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="1.jpg" style="width:100%">
+            <div class="text"></div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="2.jpg" style="width:100%">
+            <div class="text"></div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="3.jpg" style="width:93%">
+            <div class="text"></div>
+          </div>
+          
+          </div>
+          <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+          </div>
+    <div class="row" style="margin-top: 5%;">
+        <div class="column" style="background-color:bisque ;" >Blog<hr>
+          <a id="Alumni"></a>
+        <p style="font-family: papyrus;">Congratulations on our Champions in Congressional App Challenge</p>
+        <ul>
+          <li>Ms. Lizbeth Diamond </li>
+          <li>Mr. Rocco Loreta</li>
+        </ul>
+      </div>
+      <a id="News"></a>
+        <div class="column" style="background-color:bisque ;">Latest News<hr>
+          <ul>
+            <li>Congratulations on our new board passer's</li>
+            <li>Join our Webinar on COVID-19</li>
+          </ul></div>
+        <div class="column" style="background-color:bisque ;">Upcoming Events <hr>
+          <ul>
+            <li>74th Anniversary of John's university</li>
+            <li>Virtual Dance Competition</li>
+            <li>Poster making about COVID-19 prevention </li>
+          </ul></div>
+        <div class="column" style="background-color:bisque ;"><hr>Course Offered <hr>
+        <p style="font-family: papyrus;">We have different courses to offer for you to choose:<br>
+          Humanities, Social science, Formal Sciences, Agriculture, Architechture and Design and etc.</p>
+      </div>
+      <a id="About"></a>
+        <div class="column" style="margin-left:33%;background-color:bisque ;">About Us:<hr>
+          <a id="Contact"></a>
+          <ul>
+            <li>Contact No.: 09123456789</li>
+            <li>Tel no.: 444-5555</li>
+            <li>Email: JU@gmail.com </li>
+          </ul></div>
+      </div>
+      
+      <div class="footer" style="margin-top: 5%;">
+        <p>Follow us on:</p>
+         <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+        </ul> 
+      </div>
+    
+      <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+</html>         
